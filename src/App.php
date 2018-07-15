@@ -113,7 +113,7 @@ class App
 	{
 		$router->get(
 			'/[{owner}]',
-			'uppercaseOwner|' . Controller\Hello::class . '->hello'
+			['uppercaseOwner|', Controller\Hello::class . '->hello']
 		);
 	}
 }
